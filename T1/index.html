@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>T1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js"></script>
+    <style>
+    .btndiv{
+        position: absolute;
+        top: 100px;
+        left: 900px;
+        background-color: grey;
+        width: 130px;
+        border-color: #000000;
+        border-style: solid;
+   }
+   .imgdiv{
+        position: absolute;
+        border-color: #000000;
+        border-style: solid;
+        width: 520px;
+        left: 300px;
+   }
+    button{
+        background-color: white;
+        border-color: #000000;
+        border-style: solid;
+        border-radius: 10px;
+        margin: 10px 10px 10px 10px;
+        font-size: 20px;
+    }
+    canvas{
+        position: relative;
+        border-style: solid;
+        border-color: #000000;
+        align-self: center;
+        left: 250px;
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CG-T1</h1>
+    <canvas id="canvas" width=600 height=400></canvas> 
+    
+    <div class="btndiv">
+        <button id="btn1" onmouseover="onButtonColor(id)" onmouseout="offButtonColor(id)">Tons de Cinza</button>
+        <button id="btn2" onmouseover="onButtonColor(id)" onmouseout="offButtonColor(id)">Filtro Gaussiano</button>
+        <button id="btn3" onmouseover="onButtonColor(id)" onmouseout="offButtonColor(id)">Filtro Sobel</button>
+        <button id="btn5" onmouseover="onButtonColor(id)" onmouseout="offButtonColor(id)">Filtro Laplaciano</button>
+        <button id="btn4" onmouseover="onButtonColor(id)" onmouseout="offButtonColor(id)">Inverter cores</button>
+    </div>
+    
+    <div class="imgdiv">
+        <img src="./img3.jpg" onclick="onShowImage(this)" width="100" height="100">
+        <img src="./img2.jpg" onclick="onShowImage(this)" width="100" height="100"> 
+        <img src="./img.png" onclick="onShowImage(this)" width="100" height="100">
+        <img src="./img4.jpg" onclick="onShowImage(this)" width="100" height="100">
+        <img src="./img5.jpg" onclick="onShowImage(this)" width="100" height="100">
+    </div>
+    
+</body>
+</html>
